@@ -82,7 +82,7 @@ totalPopulation(zooAnimals);
 //   * The last parameter accepts a callback
 //   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 // */
-function consume(a, b, cb) {
+const consume = (a, b, cb) => {
   return cb(a, b);
   }
   
@@ -91,15 +91,15 @@ function consume(a, b, cb) {
   //   * Create a function named multiply that returns the product of two numbers 
   //   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
   // */
-  function add(numb1, numb2) {
+  const add = (numb1, numb2) => {
     return numb1 + numb2;
   }
   
-  function multiply(numb1, numb2) {
+  const multiply = (numb1, numb2) => {
     return numb1 * numb2;
   }
   
-  function greeting(firstName, lastName) {
+  const greeting = (firstName, lastName) => {
     return `Hello ${firstName} ${lastName}, nice to meet you!`
   }
   
@@ -112,7 +112,8 @@ function consume(a, b, cb) {
 
 /*
 
-Stretch: If you haven't already, convert your array method callbacks into arrow functions.
+Stretch: If you haven't already, convert your array method callbacks into
+ arrow functions.
 
 */
 
